@@ -347,10 +347,14 @@ stemness-immune-evasion-breast-cancer/
 ├── Data/
 │
 ├── codigo/
-│   ├── preprocessing/
-│   ├── wgcna/
-│   ├── machine_learning/
-│   └── enrichment/
+│   ├── Preparacion del dataset.R
+│   ├── Normalizacion.R
+│   ├── preparacion firmas.R
+│   ├── Red de coexpresion TCGA.R
+│   ├── Red de coexpresion AURORA.R
+│   ├── RandomForest_TCGA.R
+│   ├── RandomForest_AURORA.R
+│   └── analisis enriquecimiento GO.R
 │
 └── figuras/
     ├── Preparacion_Data/
