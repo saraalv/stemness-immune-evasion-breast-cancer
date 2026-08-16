@@ -331,37 +331,42 @@ Example:
 stemness-immune-evasion-breast-cancer/
 │
 ├── README.md
-├── LICENSE
-├── .gitignore
+├── .gitattributes
 │
-├── data/
-│   ├── TCGA/
-│   ├── AURORA_primary/
-│   └── AURORA_metastatic/
+├── Rawdata/
+│   ├── tcga_rawdata1.RData
+│   ├── tcga_data.RData
+│   ├── GSE209998_AUR_129_raw_counts.txt
+│   ├── clindata_aurora.csv
+│   └── aurora_data.RData
 │
-├── signatures/
-│   ├── stemness/
-│   └── immune_evasion/
+├── firmas/
+│   ├── firmasgenicas.csv
+│   └── firmasgenicas_met.csv
 │
-├── R/
+├── Data/
+│
+├── codigo/
 │   ├── preprocessing/
 │   ├── wgcna/
 │   ├── machine_learning/
 │   └── enrichment/
 │
-├── figures/
-│   ├── quality_control/
-│   ├── wgcna/
-│   ├── machine_learning/
-│   └── enrichment/
-│
-├── results/
-│   ├── modules/
-│   ├── selected_genes/
-│   └── enrichment/
-│
-└── analysis/
-    └── TFM_stemness_immune_evasion.Rmd
+└── figuras/
+    ├── Preparacion_Data/
+    ├── Redes_coexpresion/
+    │   ├── AURORA_metastasis/
+    │   │   └── modulos_interes/
+    │   ├── AURORA_primarios/
+    │   │   └── modulos_interes/
+    │   └── tcga/
+    │      └── modulos_interes/
+    ├── modelos_random_forest/
+    │   ├── AURORA_metastasis/
+    │   ├── AURORA_primarios/
+    │   └── tcga/
+    └── analisis_enriquecimiento_GO/
+
 ```
 
 ---
